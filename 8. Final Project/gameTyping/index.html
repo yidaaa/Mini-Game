@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js"> </script>
+        <title> Quick but slick! </title>
+    </head>
+
+  <body>
+    <header> Welcome to <b>QUICK BUT SLICK</b>! </header>
+    <div id='main'>
+
+        <nav> 
+            <p> 
+                You're already exhausted from your previous class but you still have a biology tutorial to attend...
+                <br>
+                "OK you may hand up your homework now"... 
+                <br>
+                What? Why is your last page of your assignment gone? You must have torn it by accident...
+                <br>
+                Got to replace it quick, and get them all right!
+            <p>
+                <b>INSTRUCTIONS:(read and scroll down)</b>
+                <ul>
+                    <li>You remember everything you needed to type into your last page. 
+                    It will appear at the top of the screen.</li> 
+                    <li>Replicate the entire paragraph into the <b>RED</b> box.</li>
+                    <li>You have only 20 seconds to type the entire paragraph. Make sure to press the SUMBIT button to hand up your work.</li>
+                    <li>If you completed it without any errors, you win!</li>
+                    <li>
+                        Select Difficulty: (Easy &#8594 Hard)
+                        <br>
+                        <input type="range" id = "difficulty" min=1 max=5 step=1 value = 1>
+                    </li>
+                    <li>
+                        Press START when ready!
+                        <input type="button" id = "startButton" value = "START">
+                    </li>
+                </ul>
+            </p>
+
+        </nav>
+
+        <article id="gameArea">
+            <p class="thought">
+                Your thoughts will appear here...
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <p id = "answer" >
+                <textarea id = "textbox" rows="4" cols="50"> Type here... </textarea>
+                <br>
+                <input type="button" id = "submitButton" value = "SUBMIT">
+            </p>
+        </article> 
+
+        
+
+    </div>
+    <footer>Credits:
+        <p> Huang Yida </p>
+        <p> Thoughts are quoted from the following scientific journal:
+            <br>
+        Chan, C., Lee, S., Wang, J., & Lin, H. (2010). Regulation of Skp2 Expression and Activity and Its Role in Cancer Progression. The Scientific World JOURNAL, 10, 1001-1015. doi:10.1100/tsw.2010.89 </p>
+    </footer>
+  </body>
+</html>
+

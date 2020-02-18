@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js"> </script>
+        <title> In the gym... </title>
+    </head>
+
+  <body>
+    <header> Welcome to <b> Punch before Brunch</b>! </header>
+    <div id='main'>
+
+        <nav> 
+            <p> 
+                <b>STORY PROGRESSION: 5%</b>
+                <br>
+                It's the start of the day, 8:30am.
+                <br>
+                But you have to get back to the gym! Your daily grind!
+                <br>
+                It's time to hustle for the muscle...
+                <br>
+                How many punches can you do deliver in 15 seconds?
+
+            <p>
+                <b>INSTRUCTIONS: (read and scroll down)</b>
+                <ul>
+                    <li>Click on the punching bag repeatedly for your morning boxing exercise.</li> 
+                    <li>Each click delivers 1 punch only.</li>
+                    <li>
+                        However, number of punches increases by 1 every second.
+                    </li>
+                    <li>
+                        You win if you manage to hit your quota score within 15 seconds. 
+                        Quota is determined by the difficulty bar below.
+                    </li>
+                    <li>
+                        You lose if you didn't hit your quota after 15 seconds 
+                        OR if the number of punches needed exceeds your initial quota by 2.
+                    </li>
+                    <li>
+                        Select Difficulty: (Very Easy &#8594 Easy)
+                        <br>
+                        <input type="range" id = "difficulty" min=17 max=72 step=5 value =17>
+                        <br>
+                        It's still early, have an easy stage...
+                    </li>
+                    <li>
+                        Press START when ready!
+                        <input type="button" id = "startButton" value = "START">
+                    </li>
+                </ul>
+            </p>
+
+        </nav>
+
+        <article id="centerDiv">
+        </article> 
+        
+
+    </div>
+    <footer>Credits:
+        <p> Huang Yida </p>
+    </footer>
+  </body>
+</html>
+

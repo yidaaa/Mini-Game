@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js"> </script>
+        <title> Just another lecture... </title>
+    </head>
+
+  <body>
+    <header> Welcome back to <b>Lecture</b>...</header>
+    <div id='main'>
+
+        <nav> 
+            <p> 
+                Nothing much here, just your average day of lectures.
+                You don't usually listen much, but there's a quiz at the end today.
+                How much information can you absorb?
+                Take in all the information before 20 seconds.
+                Can you survive this continuous torture?
+            <p>
+                <b>INSTRUCTIONS:(read and scroll down)</b>
+                <ul>
+                    <li>A random number of 'Information' will appear randomly on the screen, one after another.</li> 
+                    <li>Capture all the information by clicking them, within 20 seconds.</li>
+                    <li>A surprise quiz will appear at the end.</li>
+                    <li>If you manage to answer it, you win!</li>
+                    <li>
+                        Select Difficulty: (Easy &#8594 Impossible)
+                        <br>
+                        <input type="range" id = "difficulty" min=1 max=5 step=1 value = 1>
+                    </li>
+                    <li>
+                        Press START when ready!
+                        <input type="button" id = "startButton" value = "START">
+                    </li>
+                </ul>
+            </p>
+
+        </nav>
+
+        <article id="centerDiv">
+        </article> 
+        
+
+    </div>
+    <footer>Credits:
+        <p> Huang Yida </p>
+    </footer>
+  </body>
+</html>
+

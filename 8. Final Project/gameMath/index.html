@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js"> </script>
+        <title> Quick Maths </title>
+    </head>
+
+  <body>
+    <header> Welcome to <b>QUICK MATHS</b>! </header>
+    <div id='main'>
+
+        <nav> 
+            <p> 
+                It doesn't matter what faculty you are in, you can never escape some basic math..
+                <br>
+                "2 + 2 is 4... minus 1 thats 3 quick maths!"
+                <br>
+                Have some quick practise before you start class!
+            <p>
+                <b>INSTRUCTIONS:(read and scroll down)</b>
+                <ul>
+                    <li>10 Questions will appear after you press START.</li>
+                    <li>Answer all the math questions (do not input a space at the end!)</li> 
+                    <li>Press the submit button at the end to submit your answers.</li>
+                    <li>Reflect on life if you get any question(s) wrong.</li>
+                    <li>I mean sure you can use a calculator... but really?</li>
+                    <li>You win if you answered and submitted within <b>1 minute!</b></li>
+                    <li>
+                        Select Difficulty: (Easy &#8594 Not so Easy)
+                        <br>
+                        <input type="range" id = "difficulty" min=5 max=55 step=10 value = 5>
+                    </li>
+                    <li>
+                        Press START when ready!
+                        <input type="button" id = "startButton" value = "START">
+                    </li>
+                </ul>
+            </p>
+
+        </nav>
+
+        <article id="centerDiv">
+
+            Question 1:
+            <p id = "q1" > </p>
+            <textarea id = "a1" rows="1" cols="5" ></textarea>
+            <br>
+
+            Question 2:
+            <p id = "q2" > </p>
+            <textarea id = "a2" rows="1" cols="5"></textarea>
+            <br>
+
+            Question 3:
+            <p id = "q3" > </p>
+            <textarea id = "a3" rows="1" cols="5"></textarea>
+            <br>
+
+            Question 4:
+            <p id = "q4" > </p>
+            <textarea id = "a4" rows="1" cols="5"></textarea>
+            <br>
+
+            Question 5:
+            <p id = "q5" > </p>
+            <textarea id = "a5" rows="1" cols="5"></textarea>
+            <br>
+
+            Question 6:
+            <p id = "q6" > </p>
+            <textarea id = "a6" rows="1" cols="5"></textarea>
+            <br>
+
+            Question 7:
+            <p id = "q7" > </p>
+            <textarea id = "a7" rows="1" cols="5"></textarea>
+            <br>
+
+            Question 8:
+            <p id = "q8" > </p>
+            <textarea id = "a8" rows="1" cols="5"></textarea>
+            <br>
+
+            Question 9:
+            <p id = "q9" > </p>
+            <textarea id = "a9" rows="1" cols="5"></textarea>
+            <br>
+
+            Question 10:
+            <p id = "q10" > </p>
+            <textarea id = "a10" rows="1" cols="5"></textarea>
+            <br>
+            
+
+            <input type="button" id = "submitButton" value = "SUBMIT">
+
+        </article> 
+        
+
+    </div>
+    <footer>Credits:
+        <p> Huang Yida </p>
+    </footer>
+  </body>
+</html>
+

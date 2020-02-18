@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js"> </script>
+        <title> Dodgeball Frenzy! </title>
+    </head>
+
+  <body>
+    <header> Welcome to <b>DODGEBALL FRENZY</b>! </header>
+    <div id='main'>
+
+        <nav> 
+            <p> 
+                <b>STORY PROGRESSION: 90%</b>
+                <br>
+                Welcome to the most dreaded CCA of the night... Dodgeball!
+                Will you survive the relentless CCA?
+            <p>
+                <b>INSTRUCTIONS:(read and scroll down)</b>
+                <ul>
+                    <li>Balls will all start coming from the right side.</li> 
+                    <li>Balls will bounce off the walls, they will not disappear.</li>
+                    <li>Drag the person (you) on the left to move.</li>
+                    <li>Prevent yourself from getting hit by any of the incoming balls.</li>
+                    <li>You win if you manage to avoid getting hit for 15 seconds.</li>
+                    <li>
+                        Select Difficulty: (Hard &#8594 Very Hard)
+                        <br>
+                        <input type="range" id = "difficulty" min=5 max=10 step=1 value = 5>
+                        <br>
+                        Nothing is easy in life, especially university...
+                    </li>
+                    <li>
+                        Press START when ready!
+                        <input type="button" id = "startButton" value = "START">
+                    </li>
+                </ul>
+            </p>
+
+        </nav>
+
+        <article id="centerDiv">
+        </article> 
+        
+
+    </div>
+    <footer>Credits:
+        <p> Huang Yida </p>
+    </footer>
+  </body>
+</html>
+

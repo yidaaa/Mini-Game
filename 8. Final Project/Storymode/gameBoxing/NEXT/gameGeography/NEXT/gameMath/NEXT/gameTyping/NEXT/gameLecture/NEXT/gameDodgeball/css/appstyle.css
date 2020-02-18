@@ -1,0 +1,104 @@
+html, body {  /* Select and size the outermost elements so other elements can be set in % */
+	height:100%;
+	width:99%;
+}
+
+body {
+   font: 24px Times New Roman;
+   background-color: #ffdfd3;
+  }
+
+  #main {  /* select element with id="main" */ 
+   min-height: 70%;
+   max-height: 70%;
+   margin: 0px;
+   padding: 0px;
+   display:  flex;
+   flex-flow: row;
+   }
+ 
+  #main > article { /* select articles (if they are inside the element with id="main") */ 
+  font: 13px Times New Roman;
+   margin: 4px;
+   background: white ;
+   flex: 3 1 50%;
+   order: 2;
+   }
+
+  #main > nav {
+   overflow: scroll;
+   font: 15px Times New Roman;
+   margin: 4px;
+   padding: 5px;
+   border: 3px solid #957dad ;
+      background: #d291bc;
+           flex: 5 6 7%;
+           order: 1;
+   }
+
+  header{ 
+   display: block;
+   margin: 4px;
+   min-height: 5%;
+   background: #fec8d8;
+   text-align: center;
+   /*border properties*/
+   border: 20px solid black;
+   background-clip: padding-box;
+   border-image-source: url(https://mdn.mozillademos.org/files/13060/border-image.png);
+   border-image-slice: 40;
+   border-image-repeat: round;
+   }
+
+  footer {    /* override these attributes just for the footer elements */
+   display: block;
+   margin: 4px;
+   min-height: 5%;
+   border: 3px solid #957dad;
+   background: #fec8d8;
+   padding: 5px;
+   font-size: 12pt;
+   text-align: left;
+   }
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px olivedrab;
+    border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: red; 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+    background: #7bac10;
+    }
+
+ 
+  /* Changes layout under these conditions : Too narrow to support three columns */
+  /* "at-rules" using the '@' sign is an "advanced" feature */ 
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    flex-flow: column;
+    flex-direction: column;
+   }
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  
+};

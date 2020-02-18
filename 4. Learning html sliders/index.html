@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- import from css -->
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+       
+        <title>flexbox layout</title> <!-- title shown in tab -->
+
+        <!-- import from javascript -->
+        <script type="text/javascript" src="jslibs/require.js" data-main="appscripts/main.js" >
+        </script>
+
+    </head>
+
+  <body>
+    <header id="headerID">header </header> <!-- header with ID: headerID -->
+    <div id='main'><!-- division with ID: divID -->
+
+        <article id="articleID">   <!-- assign3: must have id to retreive from javascript -->
+        article 
+        <h2 id="Top"> Top</h2>  <!-- assign3: must have id -->
+            <p class="artClass"> <!-- assign3: must have class -->
+            This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+            </p>
+
+            <p class="artClass"> <!-- assign3: must have class -->
+            This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+            </p>
+
+            <p class="artClass"> <!-- assign3: must have class -->
+            This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+            </p>
+
+            <p class="artClass"> <!-- assign3: must have class -->
+            This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+            </p>
+        <h2 id="Bottom"> Bottom</h2> <!-- assign3: must have id -->
+            <p class="artClass"> This is a paragraph.
+            This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.
+            </p>
+        </article>
+
+        <nav>nav
+            <ul> <!-- assign3: unordered list -->
+            <!-- assign3: links to Top and Bottom (specific place) on page -->
+                <li><a href="#Top"> Top </a></li> 
+                <li><a href="#Bottom">Bottom </a></li>
+            </ul>
+        </nav>
+
+        <aside id="asideID"><!-- labels the aside -->
+         aside
+
+        <br>
+        <label>Hue Slider:</label>
+        <!-- hue slider from 0 to 360 -->
+        <input id="HueSlider"  type= "range" step="1" min="0" max="360" value="0">
+        <br>
+        <label>Saturation Slider:</label>
+        <!-- saturation slider from 0 to 100 -->
+        <input id="SaturationSlider"  type= "range" step="1" min="0" max="100" value="100">
+        <br>
+        <label>Lightness Slider:</label>
+        <!-- lightness slider from 0 to 100 -->
+        <input id="LightnessSlider"  type= "range" step="1" min="0" max="100" value="50">
+        <br>
+        <label>Opacity Slider:</label>
+        <!-- opacity slider from 0 to 1 -->
+        <input id="OpacitySlider"  type= "range" step="0.01" min="0" max="1" value="100">
+        <br>
+
+        </aside>
+
+    </div>
+    <footer>footer</footer>
+    
+  </body>
+</html> <!-- closing -->
+

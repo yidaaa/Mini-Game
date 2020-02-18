@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <!--  Include the raphael library from the jslibs directory  -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <!--  Use the require.js module loader, and tell it where our main JavaScript file is  -->
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js"> </script>
+        <title> Don't Trip! </title>
+    </head>
+
+  <body>
+    <header> Welcome to <b>Trippin' on your Trip</b>! </header>
+    <div id='main'>
+
+        <nav> 
+            <p> 
+                <b>STORY PROGRESSION: 20%</b>
+                <br>
+                It's time for your first module of the day... Geography!
+                <br>
+                What? You have a field trip today?? But you're wearing slippers...
+                <br>
+                Didn't it just rain? Isn't it really slippery right now?
+                Can you survive the geography field trip to bukit timah in slippers?
+            <p>
+                <b>INSTRUCTIONS:(read and scroll down)</b>
+                <ul>
+                    <li>
+                        Press up and down to control your character on the left.
+                        Controls are below the START button and will appear after you press start.
+                    </li> 
+                    <li>Avoid incoming logs that roll down your path.</li>
+                    <li>If you get hit by a log, you will fall and lose the game.</li>
+                    <li>If you successfully manage to avoid all logs in 30 seconds, you win!</li>
+                    <li>
+                        Select Difficulty: (Hard &#8594 Very Hard)
+                        <br>
+                        <input type="range" id = "difficulty" min=3 max=15 step=3 value = 3>
+                        <br>
+                        Nothing is easy in life, especially university...
+                    </li>
+                    <li>
+                        Press START when ready!
+                        <input type="button" id = "startButton" value = "START">
+                    </li>
+                    <br>
+                    Press to go up: &nbsp &nbsp &nbsp<input type="button" id = "upButton" value = "&#8593">
+                    <br><br>
+                    Press to go down:   <input type="button" id = "downButton" value = "&#8595">
+
+                </ul>
+            </p>
+
+        </nav>
+
+        <article id="centerDiv">
+        </article> 
+        
+
+    </div>
+    <footer>Credits:
+        <p> Huang Yida </p>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,127 @@
+html, body {
+	height:100%;
+	width:100%;
+}
+
+body {
+   font: 24px Helvetica;
+   /*background image property*/
+   background-image: url(https://images.pexels.com/photos/1020315/pexels-photo-1020315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+   background-color: black;
+  }
+
+  .content{
+    /*new class*/
+    color: darkblue;
+    /*font size changed to 10px*/
+    font-size: 10px;
+  }
+
+  #Top{
+    /*font size changed to 10px*/
+    font-size: 10px
+  }
+
+  #Bottom{
+    /*font size changed to 10px*/
+    font-size: 10px
+  }
+
+  #main {
+    /*properties of main text*/
+   min-height: 70%;
+   max-height: 70%;
+   margin: 0px;
+   padding: 0px;
+   display:  flex;
+   flex-flow: row;
+   }
+ 
+  #main > article {
+    /*properties of main text in article coloumn*/
+   margin: 4px;
+   padding: 5px;
+   /*adding border, thickness, color*/
+   border: 1px solid #cccc33;
+   /*rounding of border property*/
+   border-radius: 15px;
+   background: #dddd88;
+   flex: 3 1 50%;
+   order: 2;
+   overflow: scroll;
+   }
+  
+  #main > nav {
+    /*properties of main text in nav coloumn*/
+   /*aligning text in nav to center*/
+   text-align: center;
+   margin: 4px;
+   padding: 5px;
+   border: 2px solid #8888bb;
+   border-radius: 25px;
+   background: #ccccff;
+           flex: 1 6 15%;
+           order: 1;
+   }
+  
+  #main > aside {
+    /*properties of main text in aside coloumn*/
+   /*aligning text in nav to center*/
+   text-align: center;
+   margin: 4px;
+   padding: 5px;
+   border: 2px solid #8888bb;
+   border-radius: 25px;
+   /*background image tiling property*/
+   background-image: url(boxes.jpg);
+   background-size: contain; background-size: 20% 20%;
+           flex: 1 6 15%;
+           order: 3;
+
+   }
+ 
+  header{
+    /*properties of main text in header coloumn*/
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 10%;
+   border: 4px solid #eebb55;
+   border-radius: 25px;
+   background: #ffeebb;
+   }
+
+  footer {
+    /*properties of main text in footer coloumn*/
+   font-size: 10px;
+   display: block;
+   margin: 4px;
+   padding: 5px;
+   min-height: 10%;
+   border: 4px solid #eebb55;
+   border-radius: 25px;
+   /* using linear-gradient property, to right == left to right */
+   background: linear-gradient(to right, orange, yellow, green );
+   }
+   
+ 
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    flex-flow: column;
+    flex-direction: column;
+   }
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  
+
+
